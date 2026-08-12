@@ -1,0 +1,5 @@
+torch>=1.12
+numpy>=1.20
+opencv-python>=4.5
+scipy>=1.7
+scikit-image>=0.19
