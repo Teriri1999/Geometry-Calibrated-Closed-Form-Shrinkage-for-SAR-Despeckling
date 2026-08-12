@@ -106,15 +106,3 @@ docs/          the pipeline figure
 ## License
 
 Non-commercial use only: teaching, academic research, public demonstrations and personal experimentation. See `LICENSE`.
-
-## Citation
-
-```bibtex
-@article{hu2025clasp,
-  title  = {CLASP: Closed-Form Non-Local Sparse SAR Despeckling with
-            Analytically Determined Parameters},
-  author = {Hu, Xuran and Feng, Zhenpeng and Zhu, Mingzhe and Ban, Yifang
-            and Stankovi\'c, Ljubi\v{s}a},
-  year   = {2025}
-}
-```
