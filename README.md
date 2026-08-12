@@ -1,4 +1,6 @@
-# CLASP — Closed-form Analytic Sparse Despeckling of SAR Imagery
+# Despeckling Without Free Parameters
+
+Reference implementation of *"Despeckling Without Free Parameters: Closed-Form Sparse Shrinkage and a Random-Matrix Threshold Law"*.
 
 Training-free SAR despeckling in which no constant is tuned per image: each one follows from the number of looks and the shape of the patch group.
 
