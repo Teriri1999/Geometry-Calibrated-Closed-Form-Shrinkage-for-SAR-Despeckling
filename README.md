@@ -82,10 +82,6 @@ Expected layout:
 | noise floor `eta` | 0.2 | `nlsc.baseline` |
 | outer iterations | 12 | |
 
-Two settings are not derived, and are documented rather than hidden:
-
-- **`c` at one look.** `c*(gamma, L)` is calibrated for `L >= 2`; below that the optimum runs past the search grid without turning over, so `c_star` refuses to extrapolate and the fixed `C_ONE_LOOK = 1.5` is used.
-- **The noise level on the finest imagery.** The blind estimator needs the low end of the patch covariance spectrum to be free of scene content. On 0.1 m miniSAR imagery it is not and the thresholds collapse, so the model-based level is substituted at twice `sigma_model(L)` — the factor the estimator itself returns on the other five configurations. `scripts/run_real.py` applies this by sensor name and says so when it does.
 
 ## Layout
 
