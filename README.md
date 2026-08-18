@@ -4,7 +4,7 @@ Training-free SAR despeckling in which no constant is tuned per image: each one 
 
 ![pipeline](docs/flowchart.png)
 
-Similar patches are grouped, each group is coded on its own left singular basis, and the coefficients are shrunk by one soft threshold. Two structural facts do the work. **The dictionary is orthonormal**, so the weighted lasso separates over coefficients and is solved exactly — no ADMM, no penalty parameter — and the two weighting matrices turn out to be the numerator and denominator of one threshold, `tau_ik = sigma_k^2 / S_i = w_2i / w_1k^2`. **The dictionary is estimated from the noisy group**, so the retained subspace absorbs speckle in proportion to the aspect ratio `gamma = p^2 / K`, and the Marchenko–Pastur edge fixes the correction analytically: `c*(gamma, L) = a(L)(1 + sqrt(gamma)) + b(L)`.
+Similar patches are grouped, each group is coded on its own left singular basis, and the coefficients are shrunk by one soft threshold. Two structural facts do the work. **The dictionary is orthonormal**, so the weighted lasso separates over coefficients and is solved exactly (no ADMM, no penalty parameter) and the two weighting matrices turn out to be the numerator and denominator of one threshold, `tau_ik = sigma_k^2 / S_i = w_2i / w_1k^2`. **The dictionary is estimated from the noisy group**, so the retained subspace absorbs speckle in proportion to the aspect ratio `gamma = p^2 / K`, and the Marchenko–Pastur edge fixes the correction analytically: `c*(gamma, L) = a(L)(1 + sqrt(gamma)) + b(L)`.
 
 ## Install
 
